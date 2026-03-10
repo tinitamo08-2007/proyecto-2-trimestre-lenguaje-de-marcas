@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix – Sobre Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container-fluid px-0">
+
+    <!-- ── ROW 1: TOPNAV ── -->
+    <div class="row row-topnav align-items-center mx-0">
+        <div class="col-6">
+            <span class="netflix-logo">NETFLIX<sup style="font-size:10px;">®</sup></span>
+        </div>
+        <div class="col-6 text-end d-flex gap-2 justify-content-end">
+            <a href="pagina_netflix.html" class="btn-topnav">Inicio</a>
+        </div>
+    </div>
+
+    <!-- ── ROW 2: HERO BAND ── -->
+    <div class="row row-hero align-items-center mx-0">
+        <div class="col-12 col-md-8">
+            <h1 class="hero-title-sm">Alquila todos los DVDs que quieras por $20 al mes</h1>
+            <div class="no-fees">
+                <span>Sin fechas de devolución</span>
+                <span>Sin cargos por retraso</span>
+            </div>
+           
+        </div>
+        <div class="col-12 col-md-4 text-end mt-2 mt-md-0">
+            <a href="#" class="btn-red" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <span class="play-circle"><i class="bi bi-play-fill"></i></span>
+                Empieza tu membresía
+            </a>
+        </div>
+    </div>
+
+    <!-- ── ROW 3: REDEEM BAR ── -->
+    <div class="row row-redeem align-items-center mx-0">
+        <div class="col-12 text-center d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <span>¿Tienes una oferta especial o suscripción de regalo?</span>
+            <input class="redeem-input" type="text" placeholder="Código" />
+            <button class="btn-redeem">Canjear</button>
+        </div>
+    </div>
+
+    <!-- ── ROW 4: MAIN  ── -->
+    <div class="row row-main mx-0">
+
+        <!-- 1– 3 columnas -->
+        <div class="col-12 col-md-3 col-sidebar">
+
+            <div class="row">
+                <div class="col-12">
+                    <p style="font-size:11px;color:#666;margin-bottom:4px;">Busca películas, actores y géneros:</p>
+                    <div class="d-flex gap-1 mb-3">
+                        <input class="sidebar-search-input" type="text" />
+                        <button class="btn-search">BUSCAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="sidebar-nav">
+                        <li><a href="#">Recomendaciones</a></li>
+                        <li><a href="#">Nuevos lanzamientos</a></li>
+                        <li><a href="#">Selección de la crítica</a></li>
+                        <li><a href="#">Netflix Top 100</a></li>
+                        <li><a href="#">Premios de la Academia</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="sidebar-section-title">Géneros</div>
+                    <ul class="sidebar-list">
+                        <li><a href="#">- Ver todos los géneros</a></li>
+                        <li><a href="#">- Acción y Aventura</a></li>
+                        <li><a href="#">- Anime</a></li>
+                        <li><a href="#">- Infantiles y Familia</a></li>
+                        <li><a href="#">- Clásicos</a></li>
+                        <li><a href="#">- Comedia</a></li>
+                        <li><a href="#">- Documental</a></li>
+                        <li><a href="#">- Drama</a></li>
+                        <li><a href="#">- Extranjero</a></li>
+                        <li><a href="#">- Terror</a></li>
+                        <li><a href="#">- Independiente</a></li>
+                        <li><a href="#">- Música y Conciertos</a></li>
+                        <li><a href="#">- Romance</a></li>
+                        <li><a href="#">- Ciencia Ficción y Fantasía</a></li>
+                        <li><a href="#">- Deportes</a></li>
+                        <li><a href="#">- Televisión</a></li>
+                        <li><a href="#">- Thriller</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="sidebar-section-title">Colecciones</div>
+                    <ul class="sidebar-list">
+                        <li><a href="#">- Ver todas las colecciones</a></li>
+                        <li><a href="#">- Cine de los 70</a></li>
+                        <li><a href="#">- ¡Diversión familiar!</a></li>
+                        <li><a href="#">- Escaparate FX</a></li>
+                        <li><a href="#">- Lo mejor del cine independiente</a></li>
+                        <li><a href="#">- Citas y romance</a></li>
+                        <li><a href="#">- Películas con humor</a></li>
+                        <li><a href="#">- Amor bajo las estrellas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div><!-- /col-sidebar -->
+
+        <!-- 1 – 9 columnas -->
+        <div class="col-12 col-md-9 col-content">
+
+            <!-- Texto introductorio -->
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Netflix (Nasdaq: NFLX) es el mayor servicio de alquiler de películas en DVD por Internet del mundo,
+                        que ofrece acceso a más de un millón de miembros y más de 13.500 títulos. Nuestro atractivo y éxito
+                        se basan en ofrecer la selección más amplia de DVDs, una forma sencilla de elegir películas y una
+                        entrega rápida y gratuita.
+                    </p>
+                    <p>
+                        Por 19,95 dólares al mes, los miembros alquilan todos los DVDs que quieran y los conservan el tiempo
+                        que deseen, con hasta tres películas fuera a la vez. Ofrecemos sobres de devolución prepagados y
+                        gratuitos. Sin compromisos, los miembros pueden cancelar en cualquier momento. Nuestro modelo
+                        «sin fechas de devolución, sin cargos por retraso» ha eliminado las molestias de elegir,
+                        alquilar y devolver películas.
+                    </p>
+                    <p>Los nuevos miembros pueden probar Netflix gratis visitando netflix.com.</p>
+                    <hr />
+                </div>
+            </div>
+
+            <!-- 4 secciones en 2x2 -->
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <h3>La selección de DVDs más grande</h3>
+                    <p>
+                        Nuestra selección —muy superior a la de las mayores tiendas de alquiler— garantiza que los miembros
+                        encuentren de todo, desde los últimos estrenos de Hollywood hasta documentales difíciles de encontrar
+                        y películas independientes.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3>Mejores elecciones de películas</h3>
+                    <p>
+                        Cuando los miembros valoran películas, Netflix personaliza el sitio según sus gustos, haciendo que
+                        los 13.500 títulos sean relevantes y accesibles. Los miembros alquilaron el 97% de los títulos en
+                        enero de 2003, demostrando la eficacia del sistema de recomendación.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3>Entrega rápida y gratuita</h3>
+                    <p>
+                        Los miembros disfrutan del envío gratuito en ambas direcciones, con más del 50% alcanzados con
+                        entrega al día siguiente. Netflix opera 18 centros de distribución y planea abrir más en 2003.
+                        Al final del año, el 75% de los miembros recibirán entrega al día siguiente.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3>Historia de Netflix</h3>
+                    <p>
+                        Netflix lanzó su servicio en 1999 con el objetivo de usar el formato DVD e Internet para que sea
+                        más fácil encontrar y obtener películas que los miembros apreciarán. Como resultado, los miembros
+                        descubren y disfrutan películas menos conocidas que de otro modo no habrían considerado.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ── ROW 5: FOOTER LINKS ── -->
+    <div class="row row-footer-links mx-0">
+        <div class="col-12 text-center">
+            <a href="#">Suscripciones de regalo</a> 
+            <a href="#">Contáctanos</a> 
+            <a href="#">Afiliados</a> 
+            <a href="#">Sala de prensa</a> 
+            <a href="#">Sobre nosotros</a> 
+            <a href="#">Política de privacidad</a> 
+            <a href="#">Empleo</a> 
+            <a href="#">Relaciones con inversores</a>
+        </div>
+    </div>
+
+    <!-- ── ROW 6: FOOTER COPYRIGHT ── -->
+    <div class="row row-footer-copy mx-0">
+        <div class="col-12 text-center">
+            © 1997–2003 Netflix, Inc. Todos los derechos reservados.
+            <a href="#">Términos de uso</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- ──  ── -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <div class="login-logo w-100 text-center">NETFLIX</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body pt-2">
+                <p style="font-size:12px;text-align:center;color:#555;">Inicia sesión en tu cuenta</p>
+                <div class="login-error" id="loginError">
+                    Correo electrónico o contraseña incorrectos. Inténtalo de nuevo.
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" for="emailInput">Correo electrónico</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="tucorreo@ejemplo.com" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="passInput">Contraseña</label>
+                    <input type="password" class="form-control" id="passInput" placeholder="••••••••" />
+                </div>
+                <button class="btn-login" id="btnLogin" type="button">Iniciar sesión</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
