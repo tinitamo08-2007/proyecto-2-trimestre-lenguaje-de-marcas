@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "titulo": "American Psycho",
+        "anio": 2000,
+        "genero": "Thriller / Drama",
+        "director": "Mary Harron",
+        "descripcion": "Patrick Bateman, un joven ejecutivo de Wall Street, lleva una doble vida como asesino en serie en el Nueva York de los años 80.",
+        "imagen": "https://pics.filmaffinity.com/american_psycho-503776720-large.jpg",
+        "trailer": "https://www.youtube.com/watch?v=81mibtQWWBg"
+    },
+    {
+        "id": 2,
+        "titulo": "Kill Bill: Volumen 1",
+        "anio": 2003,
+        "genero": "Acción / Thriller",
+        "director": "Quentin Tarantino",
+        "descripcion": "Una asesina conocida como La Novia despierta de un coma de cuatro años y jura vengarse de su antiguo jefe y amante Bill, quien ordenó su muerte el día de su boda.",
+        "imagen": "https://pics.filmaffinity.com/kill_bill_volume_1-216872360-large.jpg",
+        "trailer": "https://www.youtube.com/watch?v=7kSuas6mRpk"
+    },
+    {
+        "id": 3,
+        "titulo": "Troya",
+        "anio": 2004,
+        "genero": "Acción / Drama histórico",
+        "director": "Wolfgang Petersen",
+        "descripcion": "Basada en la Ilíada de Homero, narra la guerra entre griegos y troyanos desatada tras el rapto de Helena por el príncipe Paris de Troya.",
+        "imagen": "https://pics.filmaffinity.com/Troya-263366287-large.jpg",
+        "trailer": "https://www.youtube.com/watch?v=znTLzRJimeY"
+    },
+    {
+        "id": 4,
+        "titulo": "The Hangover",
+        "anio": 2009,
+        "genero": "Comedia",
+        "director": "Todd Phillips",
+        "descripcion": "Tres amigos despiertan en una suite de Las Vegas sin recordar nada de la noche anterior y deben reconstruir los hechos para encontrar al novio desaparecido antes de la boda.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=tlize92ffnY"
+    }
+]

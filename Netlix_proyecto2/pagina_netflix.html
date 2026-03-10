@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,220 +10,213 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="estilos.css" rel="stylesheet" />
 </head>
+
 <body>
-<div class="container">
+    <div class="container">
 
-    <!-- ── ROW 1: BIENVENIDA ── -->
-    <div class="row row-welcome align-items-center" id="welcomeBar">
-        <div class="col-8">
-            ¡Bienvenido, <strong id="welcomeName">Usuario</strong>!
-            Tienes <strong>0 DVDs</strong> en casa.
-        </div>
-        <div class="col-4 text-end">
-            <button class="btn-signout" id="btnSignOut" type="button">Cerrar sesión</button>
-        </div>
-    </div>
-
-    <!-- ── ROW 2: HEADER ── -->
-    <div class="row row-header align-items-center">
-        <div class="col-6">
-            <div class="netflix-logo">NETFLIX<span style="font-size:12px;vertical-align:super;">®</span></div>
-        </div>
-        <div class="col-6 text-end">
-            <a href="login.html" class="btn-members">Área de miembros</a>
-        </div>
-    </div>
-
-    <!-- ── ROW 3: HERO ── -->
-    <div class="row row-hero align-items-center">
-        <div class="col-12 col-md-7">
-            <h1 class="hero-title">GRATIS</h1>
-            <p class="hero-sub">Prueba NETFLIX durante 30 días sin costo</p>
-            <p class="hero-desc">Sin compromisos ni cargos ocultos</p>
-            <div class="hero-links mt-2">
-                <a href="sobre_netflix.html" target="_blank">Leer más</a>
-                <a href="#">Ver más DVDs</a>
+        <!-- ── ROW 1: BIENVENIDA ── -->
+        <div class="row row-welcome align-items-center" id="welcomeBar">
+            <div class="col-8">
+                ¡Bienvenido, <strong id="welcomeName">Usuario</strong>!
+                Tienes <strong>0 DVDs</strong> en casa.
             </div>
-            <a href="login.html" class="btn-red mt-3">
-                <span class="play-circle"><i class="bi bi-play-fill"></i></span>
-                Empieza tu prueba gratuita
-            </a>
+            <div class="col-4 text-end">
+                <button class="btn-signout" id="btnSignOut" type="button">Cerrar sesión</button>
+            </div>
         </div>
-        <div class="col-12 col-md-5 mt-3 mt-md-0">
-            <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14002/production/_104422918_sobres.jpg.webp"
-                alt="Sobres Netflix" width="100%" height="auto" style="opacity:0.65;" />
-        </div>
-    </div>
 
-    <!-- ── ROW 4: SELECCIÓN / CANJEAR ── -->
-    <div class="row row-selection align-items-center">
-        <div class="col-4">
-            <button class="tab-check" type="button">¡Ve tu selección!</button>
+        <!-- ── ROW 2: HEADER ── -->
+        <div class="row row-header align-items-center">
+            <div class="col-6">
+                <div class="netflix-logo">NETFLIX<span style="font-size:12px;vertical-align:super;">®</span></div>
+            </div>
+            <div class="col-6 text-end">
+                <a href="inicio_netflix.html" class="btn-members">Área de miembros</a>
+            </div>
         </div>
-        <div class="col-8 text-end d-flex align-items-center justify-content-end gap-2">
-            <span style="color:#fff;font-size:12px;">¿Tienes un código de regalo?</span>
-            <input class="redeem-input" type="text" placeholder="Código" />
-            <button class="btn-redeem" type="button">Canjear</button>
-        </div>
-    </div>
 
-    <!-- ── ROW 5: DVDs ── -->
-    <div class="row row-dvds g-3">
-        <div class="col-6 col-md-3">
-            <div class="dvd-card">
-                <a href="#">American Psycho</a>
-                <div class="dvd-cover"
-                    style="background-image:url('https://pics.filmaffinity.com/american_psycho-503776720-large.jpg');">
+        <!-- ── ROW 3: HERO ── -->
+        <div class="row row-hero align-items-center">
+            <div class="col-12 col-md-7">
+                <h1 class="hero-title">GRATIS</h1>
+                <p class="hero-sub">Prueba NETFLIX durante 30 días sin costo</p>
+                <p class="hero-desc">Sin compromisos ni cargos ocultos</p>
+                <div class="hero-links mt-2">
+                    <a href="sobre_netflix.html" target="_blank">Leer más</a>
+                    <a href="#">Ver más DVDs</a>
+                </div>
+                <a href="inicio_netflix.html" class="btn-red mt-3">
+                    <span class="play-circle"><i class="bi bi-play-fill"></i></span>
+                    Empieza tu prueba gratuita
+                </a>
+            </div>
+            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14002/production/_104422918_sobres.jpg.webp"
+                    alt="Sobres Netflix" width="100%" height="auto" style="opacity:0.65;" />
+            </div>
+        </div>
+
+        <!-- ── ROW 4: SELECCIÓN / CANJEAR ── -->
+        <div class="row row-selection align-items-center">
+            <div class="col-4">
+                <button class="tab-check" type="button">¡Ve tu selección!</button>
+            </div>
+            <div class="col-8 text-end d-flex align-items-center justify-content-end gap-2">
+                <span style="color:#fff;font-size:12px;">¿Tienes un código de regalo?</span>
+                <input class="redeem-input" type="text" placeholder="Código" />
+                <button class="btn-redeem" type="button">Canjear</button>
+            </div>
+        </div>
+
+        <!-- ── ROW 5: DVDs ── -->
+        <div class="row row-dvds g-3" id="contenedordvds">
+            <!-- Las tarjetas de DVDs se cargarán aquí dinámicamente -->
+        </div>
+
+        <!-- ── ROW 6: VER MÁS DVDs ── -->
+        <div class="row row-dvds-more">
+            <div class="col-12 text-end">
+                <a href="#" style="font-size:12px;">Ver más DVDs &rsaquo;</a>
+            </div>
+        </div>
+
+        <!-- ── ROW 7: TÍTULO CÓMO FUNCIONA ── -->
+        <div class="row row-how-title">
+            <div class="col-12">
+                <h4 style="font-size:13px;font-weight:bold;margin:0;">¿Cómo funciona?</h4>
+            </div>
+        </div>
+
+        <!-- ── ROW 8: PASOS ── -->
+        <div class="row row-how-steps g-2">
+            <div class="col-12 col-md-4">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div class="step-text">Regístrate y elige<br />tus películas.</div>
+                    <div class="step-icon"><i class="bi bi-pc-display"></i></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div class="step-text">Recíbelas por correo.<br />¡Envío gratuito!</div>
+                    <div class="step-icon"><i class="bi bi-mailbox"></i></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div class="step-text">Devuélvelas y<br />te enviamos más.</div>
+                    <div class="step-icon"><i class="bi bi-disc-fill"></i></div>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-md-3">
-            <div class="dvd-card">
-                <a href="#">Kill Bill : Volumen 1</a>
-                <div class="dvd-cover"
-                    style="background-image:url('https://pics.filmaffinity.com/kill_bill_volume_1-216872360-large.jpg');">
+
+        <!-- ── ROW 9: INFO + PRENSA ── -->
+        <div class="row row-info g-3">
+            <div class="col-12 col-md-6">
+                <div class="feat-box">
+                    <h5>La empresa nº 1 de alquiler de DVDs en línea</h5>
+                    <ul class="feat-list">
+                        <li><strong>¡Sin cargos por retraso, nunca!</strong></li>
+                        <li>Más de <strong>13.500</strong> títulos: clásicos y estrenos</li>
+                        <li>Envío gratuito de ida y vuelta en 1–3 días</li>
+                        <li>Sin desplazamientos. Sin colas. Sin molestias.</li>
+                        <li>Ten siempre hasta <strong>3 DVDs</strong> en casa</li>
+                        <li>Sin permanencia. Cancela cuando quieras.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="press-box">
+                    <h5>Destacado en:</h5>
+                    <div class="press-row">
+                        <span class="logo-time">TIME</span>
+                        <span>50 Mejores Sitios Web <strong>2002</strong></span>
+                    </div>
+                    <div class="press-row">
+                        <span class="logo-forbes">Forbes</span>
+                        <span>Lo mejor de la Web <strong>2002</strong></span>
+                    </div>
+                    <div class="press-row">
+                        <span class="logo-gh">Good Housekeeping</span>
+                    </div>
+                    <div class="press-row">
+                        <span class="logo-nyt">The New York Times</span>
+                    </div>
+                    <div class="press-row" style="gap:16px;">
+                        <span class="logo-usa">USA<br />TODAY</span>
+                        <span class="logo-wired">W|R|E|D</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-md-3">
-            <div class="dvd-card">
-                <a href="#">Troya</a>
-                <div class="dvd-cover"
-                    style="background-image:url('https://pics.filmaffinity.com/Troya-263366287-large.jpg');">
+
+        <!-- ── ROW 10: FOOTER LINKS ── -->
+        <div class="row row-footer-links">
+            <div class="col-12">
+                <div class="footer-links">
+                    <a href="#">Suscripciones de regalo</a> |
+                    <a href="#">Contáctanos</a> |
+                    <a href="#">Afiliados</a> |
+                    <a href="#">Sala de prensa</a> |
+                    <a href="sobre_netflix.html" target="_blank">Sobre nosotros</a> |
+                    <a href="#">Política de privacidad</a> |
+                    <a href="#">Empleo</a> |
+                    <a href="#">Relaciones con inversores</a>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-md-3">
-            <div class="dvd-card">
-                <a href="#">The Hangover</a>
-                <div class="dvd-cover"
-                    style="background-image:url('https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg');">
-                </div>
+
+        <!-- ── ROW 11: FOOTER COPYRIGHT ── -->
+        <div class="row row-footer-copy">
+            <div class="col-12">
+                <p class="footer-copy">
+                    © 1997–2003 Netflix, Inc. Todos los derechos reservados.
+                    <a href="#">Términos de uso</a>.
+                </p>
             </div>
         </div>
-    </div>
 
-    <!-- ── ROW 6: VER MÁS DVDs ── -->
-    <div class="row row-dvds-more">
-        <div class="col-12 text-end">
-            <a href="#" style="font-size:12px;">Ver más DVDs &rsaquo;</a>
-        </div>
-    </div>
+    </div><!-- /container -->
 
-    <!-- ── ROW 7: TÍTULO CÓMO FUNCIONA ── -->
-    <div class="row row-how-title">
-        <div class="col-12">
-            <h4 style="font-size:13px;font-weight:bold;margin:0;">¿Cómo funciona?</h4>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var nombre = sessionStorage.getItem("netflix_nombre");
 
-    <!-- ── ROW 8: PASOS ── -->
-    <div class="row row-how-steps g-2">
-        <div class="col-12 col-md-4">
-            <div class="step-card">
-                <div class="step-num">1</div>
-                <div class="step-text">Regístrate y elige<br />tus películas.</div>
-                <div class="step-icon"><i class="bi bi-pc-display"></i></div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="step-card">
-                <div class="step-num">2</div>
-                <div class="step-text">Recíbelas por correo.<br />¡Envío gratuito!</div>
-                <div class="step-icon"><i class="bi bi-mailbox"></i></div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="step-card">
-                <div class="step-num">3</div>
-                <div class="step-text">Devuélvelas y<br />te enviamos más.</div>
-                <div class="step-icon"><i class="bi bi-disc-fill"></i></div>
-            </div>
-        </div>
-    </div>
+        if (nombre) {
+            document.getElementById("welcomeName").textContent = nombre;
+        } else {
+            document.getElementById("welcomeBar").style.display = "none";
+        }
 
-    <!-- ── ROW 9: INFO + PRENSA ── -->
-    <div class="row row-info g-3">
-        <div class="col-12 col-md-6">
-            <div class="feat-box">
-                <h5>La empresa nº 1 de alquiler de DVDs en línea</h5>
-                <ul class="feat-list">
-                    <li><strong>¡Sin cargos por retraso, nunca!</strong></li>
-                    <li>Más de <strong>13.500</strong> títulos: clásicos y estrenos</li>
-                    <li>Envío gratuito de ida y vuelta en 1–3 días</li>
-                    <li>Sin desplazamientos. Sin colas. Sin molestias.</li>
-                    <li>Ten siempre hasta <strong>3 DVDs</strong> en casa</li>
-                    <li>Sin permanencia. Cancela cuando quieras.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="press-box">
-                <h5>Destacado en:</h5>
-                <div class="press-row">
-                    <span class="logo-time">TIME</span>
-                    <span>50 Mejores Sitios Web <strong>2002</strong></span>
-                </div>
-                <div class="press-row">
-                    <span class="logo-forbes">Forbes</span>
-                    <span>Lo mejor de la Web <strong>2002</strong></span>
-                </div>
-                <div class="press-row">
-                    <span class="logo-gh">Good Housekeeping</span>
-                </div>
-                <div class="press-row">
-                    <span class="logo-nyt">The New York Times</span>
-                </div>
-                <div class="press-row" style="gap:16px;">
-                    <span class="logo-usa">USA<br />TODAY</span>
-                    <span class="logo-wired">W|R|E|D</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ── ROW 10: FOOTER LINKS ── -->
-    <div class="row row-footer-links">
-        <div class="col-12">
-            <div class="footer-links">
-                <a href="#">Suscripciones de regalo</a> |
-                <a href="#">Contáctanos</a> |
-                <a href="#">Afiliados</a> |
-                <a href="#">Sala de prensa</a> |
-                <a href="sobre_netflix.html" target="_blank">Sobre nosotros</a> |
-                <a href="#">Política de privacidad</a> |
-                <a href="#">Empleo</a> |
-                <a href="#">Relaciones con inversores</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- ── ROW 11: FOOTER COPYRIGHT ── -->
-    <div class="row row-footer-copy">
-        <div class="col-12">
-            <p class="footer-copy">
-                © 1997–2003 Netflix, Inc. Todos los derechos reservados.
-                <a href="#">Términos de uso</a>.
-            </p>
-        </div>
-    </div>
-
-</div><!-- /container -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    var nombre = sessionStorage.getItem("netflix_nombre");
-
-    if (nombre) {
-        document.getElementById("welcomeName").textContent = nombre;
-    } else {
-        document.getElementById("welcomeBar").style.display = "none";
-    }
-
-    document.getElementById("btnSignOut").addEventListener("click", function () {
-        sessionStorage.removeItem("netflix_nombre");
-        window.location.href = "login.html";
-    });
-</script>
+        document.getElementById("btnSignOut").addEventListener("click", function () {
+            sessionStorage.removeItem("netflix_nombre");
+            window.location.href = "inicio_netflix.html";
+        });
+    </script>
+    <script src="index.js"></script>
+    <script src ="datos.json"></script>
+    <script>
+        var nombre = sessionStorage.getItem("netflix_nombre");
+        if (nombre) {
+            document.getElementById("welcomeName").textContent = nombre;
+        } else {
+            document.getElementById("welcomeBar").style.display = "none";
+        }
+        document.getElementById("btnSignOut").addEventListener("click", function () {
+            sessionStorage.removeItem("netflix_nombre");
+            window.location.href = "inicio_netflix.html";
+        });
+        var contenedor = document.getElementById("contenedordvds");
+        peliculas.forEach(function(pelicula){
+            contenedor.innerHTML += '<div class="col-6 col-md-3">' +
+                '<div class="dvd-card">' +
+                    '<a href="' + pelicula.trailer + '" target="_blank">' + pelicula.titulo + '</a>' +
+                    '<div class="dvd-cover" style="background-image:url(\'' + pelicula.imagen + '\');"></div>' +
+                '</div>' +
+            '</div>';
+        });
+    </script>
 </body>
 </html>
