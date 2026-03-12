@@ -67,7 +67,6 @@
                 <button class="btn-redeem" type="button">Canjear</button>
             </div>
         </div>
-
         <!-- ── ROW 5: DVDs ── -->
         <div class="row row-dvds g-3" id="contenedordvds">
             <!-- Las tarjetas de DVDs se cargarán aquí dinámicamente -->
@@ -196,8 +195,36 @@
         });
     </script>
     <script src="index.js"></script>
-    <script src ="datos.json"></script>
+   <!-- <script src ="datos.json"></script> -->
     <script>
+        async function cargar_datos() {
+            try {
+                // Leemos el Json con fetch
+                const datoJson = await fetch ("./datos.json");
+                // Lo convertimo a un objeto de JavaScript
+                const datosPeliculas = await datoJson.json();
+                console.log(datosPeliculas);
+
+                // Cargamos lo sdatos en la web HTML
+                var contenedor = document.getElementById("contenedordvds");
+                                
+                datosPeliculas.forEach(function(pelicula){
+                    contenedor.innerHTML += '<div class="col-6 col-md-3">' +
+                        '<div class="dvd-card">' +
+                            '<a href="' + pelicula.trailer + '" target="_blank">' + pelicula.titulo + '</a>' +
+                            '<div class="dvd-cover" style="background-image:url(\'' + pelicula.imagen + '\');"></div>' +
+                        '</div>' +
+                    '</div>';
+                });
+
+            } catch (error) {  
+                console.log("Error al leer el archivo JSON:", error);   
+            }    
+        }
+
+        cargar_datos();
+
+
         var nombre = sessionStorage.getItem("netflix_nombre");
         if (nombre) {
             document.getElementById("welcomeName").textContent = nombre;
@@ -208,15 +235,7 @@
             sessionStorage.removeItem("netflix_nombre");
             window.location.href = "inicio_netflix.html";
         });
-        var contenedor = document.getElementById("contenedordvds");
-        peliculas.forEach(function(pelicula){
-            contenedor.innerHTML += '<div class="col-6 col-md-3">' +
-                '<div class="dvd-card">' +
-                    '<a href="' + pelicula.trailer + '" target="_blank">' + pelicula.titulo + '</a>' +
-                    '<div class="dvd-cover" style="background-image:url(\'' + pelicula.imagen + '\');"></div>' +
-                '</div>' +
-            '</div>';
-        });
+
     </script>
 </body>
 </html>
