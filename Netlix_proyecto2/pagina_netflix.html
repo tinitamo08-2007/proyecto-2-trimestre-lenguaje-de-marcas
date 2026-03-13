@@ -18,10 +18,10 @@
         <div class="row row-welcome align-items-center" id="welcomeBar">
             <div class="col-8">
                 ¡Bienvenido, <strong id="welcomeName">Usuario</strong>!
-                Tienes <strong>0 DVDs</strong> en casa.
+                Tienes <strong> <span id="totalEnCasa">0</span> DVDs</strong> en casa.
             </div>
             <div class="col-4 text-end">
-                <button class="btn-signout" id="btnSignOut" type="button">Cerrar sesión</button>
+                <button class="btn-signout" id="btn-signOut" type="button">Cerrar sesión</button>
             </div>
         </div>
 
@@ -43,7 +43,7 @@
                 <p class="hero-desc">Sin compromisos ni cargos ocultos</p>
                 <div class="hero-links mt-2">
                     <a href="sobre_netflix.html" target="_blank">Leer más</a>
-                    <a href="#">Ver más DVDs</a>
+                    <a href="https://www.justwatch.com/mx/proveedor/netflix?page=3" target="_blank">Ver más DVDs</a>
                 </div>
                 <a href="inicio_netflix.html" class="btn-red mt-3">
                     <span class="play-circle"><i class="bi bi-play-fill"></i></span>
@@ -52,7 +52,7 @@
             </div>
             <div class="col-12 col-md-5 mt-3 mt-md-0">
                 <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14002/production/_104422918_sobres.jpg.webp"
-                    alt="Sobres Netflix" width="100%" height="auto" style="opacity:0.65;" />
+                    alt="Sobres Netflix" width="100%" height="auto" style="opacity:0.20;" />
             </div>
         </div>
 
@@ -69,7 +69,7 @@
         </div>
         <!-- ── ROW 5: DVDs ── -->
         <div class="row row-dvds g-3" id="contenedordvds">
-            <!-- Las tarjetas de DVDs se cargarán aquí dinámicamente -->
+            <!-- Las tarjetas de DVDs se cargarán aquí -->
         </div>
 
         <!-- ── ROW 6: VER MÁS DVDs ── -->
@@ -177,65 +177,11 @@
             </div>
         </div>
 
-    </div><!-- /container -->
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var nombre = sessionStorage.getItem("netflix_nombre");
-
-        if (nombre) {
-            document.getElementById("welcomeName").textContent = nombre;
-        } else {
-            document.getElementById("welcomeBar").style.display = "none";
-        }
-
-        document.getElementById("btnSignOut").addEventListener("click", function () {
-            sessionStorage.removeItem("netflix_nombre");
-            window.location.href = "inicio_netflix.html";
-        });
-    </script>
-    <script src="index.js"></script>
-   <!-- <script src ="datos.json"></script> -->
-    <script>
-        async function cargar_datos() {
-            try {
-                // Leemos el Json con fetch
-                const datoJson = await fetch ("./datos.json");
-                // Lo convertimo a un objeto de JavaScript
-                const datosPeliculas = await datoJson.json();
-                console.log(datosPeliculas);
-
-                // Cargamos lo sdatos en la web HTML
-                var contenedor = document.getElementById("contenedordvds");
-                                
-                datosPeliculas.forEach(function(pelicula){
-                    contenedor.innerHTML += '<div class="col-6 col-md-3">' +
-                        '<div class="dvd-card">' +
-                            '<a href="' + pelicula.trailer + '" target="_blank">' + pelicula.titulo + '</a>' +
-                            '<div class="dvd-cover" style="background-image:url(\'' + pelicula.imagen + '\');"></div>' +
-                        '</div>' +
-                    '</div>';
-                });
-
-            } catch (error) {  
-                console.log("Error al leer el archivo JSON:", error);   
-            }    
-        }
-
-        cargar_datos();
-
-
-        var nombre = sessionStorage.getItem("netflix_nombre");
-        if (nombre) {
-            document.getElementById("welcomeName").textContent = nombre;
-        } else {
-            document.getElementById("welcomeBar").style.display = "none";
-        }
-        document.getElementById("btnSignOut").addEventListener("click", function () {
-            sessionStorage.removeItem("netflix_nombre");
-            window.location.href = "inicio_netflix.html";
-        });
-
-    </script>
+   
+    <script src="peliculas_pagina_netflix.js"></script>
+    <script src ="inicio_secion.js"></script>
+      
 </body>
 </html>

@@ -1,0 +1,57 @@
+[
+    {
+        
+        "id_pelicula": 2,
+        "nombre": "Sesar", 
+        "correo": "sesar@netflix.com",
+        "contraseña": "sesar123",
+        "fecha_renta": "01/03/2003",
+        "fecha_devolucion": null,
+        "estado": "en_casa"
+    },
+    {
+        "id_pelicula": 7,
+        "nombre": "Mateo",
+        "correo": "mateo@netflix.com",
+        "contraseña": "mateo123",
+        "fecha_renta": "03/03/2003",
+        "fecha_devolucion": null,
+        "estado": "en_casa"
+    },
+    {
+        "id_pelicula": 5,
+        "nombre": "Valentina",
+        "correo": "valentina@netflix.com",
+        "contraseña": "valentina123",
+        "fecha_renta": "05/03/2003",
+        "fecha_devolucion": null,
+        "estado": "en_casa"
+    },
+    {
+        "id_pelicula": 1,
+        "nombre": "Juan",
+        "correo": "juan@netflix.com",
+        "contraseña": "juan123",
+        "fecha_renta": "10/02/2003",
+        "fecha_devolucion": "18/02/2003",
+        "estado": "devuelta"
+    },
+    {
+        "id_pelicula": 3,
+        "nombre": "Tatiana",
+        "correo": "tatiana@netflix.com",
+        "contraseña": "tatiana123",
+        "fecha_renta": "01/02/2003",
+        "fecha_devolucion": "12/02/2003",
+        "estado": "devuelta"
+    },
+    {
+        "id_pelicula": 6,
+        "nombre": "Carlos",
+        "correo": "carlos@netflix.com", 
+        "contraseña": "carlos123",
+        "fecha_renta": "15/01/2003",
+        "fecha_devolucion": "22/01/2003",
+        "estado": "devuelta"
+    }
+]

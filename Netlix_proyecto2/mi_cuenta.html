@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix – Mi Cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+
+    <!-- ── ROW 1: BIENVENIDA ── -->
+    <div class="row row-welcome align-items-center">
+        <div class="col-8">
+            ¡Bienvenido, <strong id="welcomeName">Usuario</strong>!
+            Tienes <strong id="totalEnCasa">0</strong> DVDs en casa.
+        </div>
+        <div class="col-4 text-end">
+            <button class="btn-signout" id="btnSignOut" type="button">Cerrar sesión</button>
+        </div>
+    </div>
+
+    <!-- ── ROW 2: HEADER ── -->
+    <div class="row row-header align-items-center">
+        <div class="col-6">
+            <a href="pagina_netflix.html" style="text-decoration:none;">
+                <div class="netflix-logo">NETFLIX<span style="font-size:12px;vertical-align:super;">®</span></div>
+            </a>
+        </div>
+        <div class="col-6 text-end">
+            <a href="pagina_netflix.html" class="btn-members">← Volver al catálogo</a>
+        </div>
+    </div>
+
+    <!-- ── ROW 3: HERO ── -->
+    <div class="row row-hero align-items-center">
+        <div class="col-12 col-md-8">
+            <h1 class="hero-title" style="font-size:20px;">Mi cuenta</h1>
+            <p class="hero-sub" style="font-size:13px;">Gestiona tus DVDs en renta e historial de alquileres</p>
+        </div>
+        <div class="col-12 col-md-4 text-end">
+            <a href="pagina_netflix.html" class="btn-red" style="font-size:12px;padding:7px 14px;">
+                <span class="play-circle"><i class="bi bi-play-fill" ></i></span>
+                Ver catálogo
+            </a>
+        </div>
+    </div>
+
+    <!-- ── ROW 4: BREADCRUMB ── -->
+    <div class="row row-selection align-items-center">
+        <div class="col-12" style="font-size:11px;">
+            <i class="bi bi-person-fill"></i>&nbsp;
+            Inicio &rsaquo; Mi cuenta &rsaquo; Mis rentas
+        </div>
+    </div>
+
+    <!-- ── ROW 5: CONTENIDO ── -->
+    <div class="row row-cuenta-body px-3">
+
+        <!-- DVDs en casa -->
+        <div class="col-12 col-md-6">
+            <div class="seccion-titulo">
+                <i class="bi bi-house-fill"></i> DVDs en casa ahora
+            </div>
+            <div id="listEnCasa"></div>
+        </div>
+
+        <!-- Historial -->
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
+            <div class="seccion-titulo">
+                <i class="bi bi-clock-history"></i> Historial de alquileres
+            </div>
+            <div id="listHistorial"></div>
+        </div>
+
+    </div>
+
+    <!-- ── ROW 6: FOOTER LINKS ── -->
+    <div class="row row-footer-links">
+        <div class="col-12">
+            <div class="footer-links">
+                <a href="#">Suscripciones de regalo</a> |
+                <a href="#">Contáctanos</a> |
+                <a href="#">Afiliados</a> |
+                <a href="#">Sala de prensa</a> |
+                <a href="sobre_netflix.html" target="_blank">Sobre nosotros</a> |
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Empleo</a> |
+                <a href="#">Relaciones con inversores</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── ROW 7: FOOTER COPYRIGHT ── -->
+    <div class="row row-footer-copy">
+        <div class="col-12">
+            <p class="footer-copy">
+                © 1997–2003 Netflix, Inc. Todos los derechos reservados.
+                <a href="#">Términos de uso</a>.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cargamos primero los datos, luego el script que los usa -->
+<script src="inicio_secion.js"></script>
+
+<script>
+    
+
+
+</script>
+</body>
+</html>

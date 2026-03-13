@@ -17,7 +17,7 @@ body {
     color: #222;
 }
 
-/* ── netflix LOGO ── */
+/* ── LOGO ── */
 .netflix-logo {
     font-family: Arial Black, Arial, sans-serif;
     font-size: 24px;
@@ -27,7 +27,7 @@ body {
     text-shadow: 1px 1px 2px #000;
 }
 
-/* ── BOTÓN PRINCIPAL ── */
+/* ── BOTÓN ROJO ── */
 .btn-red {
     background: var(--rojo-btn);
     color: #fff !important;
@@ -64,7 +64,8 @@ body {
     font-size: 12px;
     margin-left: 2px;
 }
-/* ── BOTÓN CANJEAR  ── */
+
+/* ── BOTÓN CANJEAR ── */
 .btn-redeem {
     background: var(--dorado-btn);
     color: #000;
@@ -79,7 +80,6 @@ body {
     background: linear-gradient(180deg, #ffcc00 0%, #e09000 100%);
 }
 
-/* ── agtegar el numero de cupon  ── */
 .redeem-input {
     padding: 2px 6px;
     font-size: 12px;
@@ -87,7 +87,7 @@ body {
     width: 130px;
 }
 
-/* ── LINKS DE HERO ── */
+/* ── LINKS HERO ── */
 .hero-links a {
     color: var(--azul-link);
     font-size: 13px;
@@ -98,7 +98,8 @@ body {
 .hero-links a:hover {
     color: #0000cc;
 }
-/* ── ROW: BIENVENIDA  ── */
+
+/* ── ROW: BIENVENIDA ── */
 .row-welcome {
     background: #f0f0f0;
     border-bottom: 1px solid #ccc;
@@ -106,6 +107,7 @@ body {
     font-size: 12px;
     color: #333;
 }
+
 .btn-signout {
     background: #ddd;
     border: 1px solid #999;
@@ -118,12 +120,13 @@ body {
     background: #ccc;
 }
 
-/* ── ROW: cabecera── */
+/* ── ROW: CABECERA ── */
 .row-header,
 .row-topnav {
     background: var(--rojo);
     padding: 6px 12px;
 }
+
 .btn-members,
 .btn-topnav {
     background: #c8c8c8;
@@ -135,33 +138,26 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 .btn-members:hover,
 .btn-topnav:hover {
     background: #e0e0e0;
     color: #000;
 }
+
+/* ── ROW: HERO ── */
 .row-hero {
     background: var(--amarillo);
     padding: 12px 14px;
     border-bottom: 3px solid var(--rojo);
 }
+
 .hero-title {
     font-size: 28px;
     font-weight: 900;
     color: #000;
     line-height: 1.1;
     margin-bottom: 4px;
-}
-.hero-sub {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    margin: 0;
-}
-.hero-desc {
-    font-size: 13px;
-    color: #333;
-    margin: 2px 0 8px;
 }
 
 .hero-title-sm {
@@ -170,6 +166,20 @@ body {
     color: #000;
     line-height: 1.2;
 }
+
+.hero-sub {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.hero-desc {
+    font-size: 13px;
+    color: #333;
+    margin: 2px 0 8px;
+}
+
 .no-fees {
     display: flex;
     gap: 18px;
@@ -179,7 +189,7 @@ body {
     margin: 4px 0 6px;
 }
 
-/* ── ROW: SELECCIÓN── */
+/* ── ROW: SELECCIÓN / CANJEAR ── */
 .row-selection,
 .row-redeem {
     background: var(--rojo);
@@ -197,18 +207,22 @@ body {
     padding: 4px 12px;
     cursor: pointer;
 }
+
 .tab-check:hover {
     background: #eee;
 }
-/* ── ROW: FOOTER LINKS ── */
+
+/* ── ROW: FOOTER ── */
 .row-footer-links {
     background: var(--rojo);
     padding: 7px 14px;
 }
+
 .footer-links,
 .row-footer-links .col-12 {
     text-align: center;
 }
+
 .footer-links a,
 .row-footer-links a {
     color: #fff;
@@ -216,12 +230,12 @@ body {
     text-decoration: none;
     margin: 0 4px;
 }
+
 .footer-links a:hover,
 .row-footer-links a:hover {
     text-decoration: underline;
 }
 
-/* ── ROW: FOOTER COPYRIGHT ── */
 .row-footer-copy {
     background: #fff;
     text-align: center;
@@ -292,7 +306,7 @@ body {
 
 .row-how-steps {
     background: #f5f5f5;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .step-card {
@@ -399,57 +413,13 @@ body {
     letter-spacing: 2px;
 }
 
-/* ── MODAL LOGIN ── */
-.modal-content {
-    border-radius: 0;
-    border: 2px solid var(--rojo);
-}
-
-.login-logo {
-    font-family: Arial Black, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    color: var(--rojo);
-    letter-spacing: -1px;
-}
-
-.login-error {
-    background: #ffe0e0;
-    border: 1px solid #c00;
-    color: #900;
-    font-size: 11px;
-    padding: 6px 8px;
-    margin-bottom: 10px;
-    display: none;
-}
-
-.login-error.show {
-    display: block;
-}
-
-.btn-login {
-    background: var(--rojo-btn);
-    color: #fff;
-    font-weight: bold;
-    font-size: 13px;
-    border: 1px solid #600;
-    width: 100%;
-    padding: 7px;
-    cursor: pointer;
-}
-
-.btn-login:hover {
-    background: var(--rojo-hover);
-}
-
-/* ── MAIN WRAP ── */
+/* ── SIDEBAR (sobre_nosotros) ── */
 .row-main {
     background: #fff;
     border-left: var(--borde);
     border-right: var(--borde);
 }
 
-/* ── SIDEBAR ── */
 .col-sidebar {
     border-right: 1px solid #ccc;
     padding: 10px 8px;
@@ -511,28 +481,9 @@ body {
     text-decoration: underline;
 }
 
-/* ── CONTENT ── */
 .col-content {
     padding: 14px 20px;
     background: #fff;
-}
-
-.content-title {
-    font-size: 18px;
-    color: var(--rojo);
-    border-bottom: 2px solid var(--rojo);
-    padding-bottom: 4px;
-    margin-bottom: 10px;
-}
-
-.breadcrumb-bar {
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-
-.breadcrumb-bar a {
-    color: var(--azul-link);
-    text-decoration: underline;
 }
 
 .col-content p {
@@ -552,7 +503,50 @@ body {
     margin: 14px 0;
 }
 
-/* ── ZONA CENTRAL ── */
+/* ── MODAL LOGIN (sobre_nosotros) ── */
+.modal-content {
+    border-radius: 0;
+    border: 2px solid var(--rojo);
+}
+
+.login-logo {
+    font-family: Arial Black, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--rojo);
+    letter-spacing: -1px;
+}
+
+.login-error {
+    background: #ffe0e0;
+    border: 1px solid #c00;
+    color: #900;
+    font-size: 11px;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.login-error.show {
+    display: block;
+}
+
+.btn-login {
+    background: var(--rojo-btn);
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #600;
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: var(--rojo-hover);
+}
+
+/* ── PÁGINA LOGIN (inicio_netflix) ── */
 .row-login-body {
     background: #fff;
     border-left: 1px solid #aaa;
@@ -560,7 +554,6 @@ body {
     padding: 24px 0 32px;
 }
 
-/* ── CAJA FORMULARIO ── */
 .login-box {
     background: #f9f9f9;
     border: 1px solid #ccc;
@@ -577,7 +570,6 @@ body {
     margin-bottom: 14px;
 }
 
-/* ── LABELS E INPUTS ── */
 .login-label {
     font-size: 12px;
     font-weight: bold;
@@ -606,7 +598,6 @@ body {
     background: #fff8f8;
 }
 
-/* ── ERROR ── */
 .login-error-box {
     background: #ffe0e0;
     border: 1px solid #c00;
@@ -623,9 +614,8 @@ body {
     display: flex;
 }
 
-/* ── BOTÓN ENVIAR ── */
 .btn-login-submit {
-    background: linear-gradient(180deg, #e03000 0%, #a31000 100%);
+    background: var(--rojo-btn);
     color: #fff;
     font-size: 13px;
     font-weight: bold;
@@ -636,9 +626,22 @@ body {
 }
 
 .btn-login-submit:hover {
-    background: linear-gradient(180deg, #ff3a10 0%, #c01500 100%);
+    background: var(--rojo-hover);
 }
-/* ── CAJA BENEFICIOS ── */
+
+.login-link {
+    color: var(--azul-link);
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.divider-bevel {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 12px 0;
+}
+
 .benefits-box {
     background: #f9f9f9;
     border: 1px solid #ccc;
@@ -677,7 +680,7 @@ body {
 }
 
 .promo-box {
-    background: linear-gradient(180deg, #f5c400 0%, #e8a800 100%);
+    background: var(--amarillo);
     border: 1px solid #c07800;
     padding: 8px 12px;
     margin-top: 12px;
@@ -686,13 +689,97 @@ body {
 }
 
 .promo-box a {
-    color: #00008b;
+    color: var(--azul-link);
     font-weight: bold;
     text-decoration: underline;
 }
 
-.divider-bevel {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 12px 0;
+/* ── SECCIÓN RENTAS ── */
+.row-cuenta-body {
+    background: #fff;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    padding: 16px 0 32px;
+}
+
+/* título de sección */
+.seccion-titulo {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: var(--rojo);
+    padding: 5px 12px;
+    margin-bottom: 12px;
+}
+
+/* tarjeta de película rentada */
+.renta-card {
+    display: flex;
+    gap: 12px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.renta-poster {
+    width: 60px;
+    min-width: 60px;
+    aspect-ratio: 2/3;
+    background-size: cover;
+    background-position: center top;
+    background-color: #555;
+    border: 1px solid #ccc;
+}
+
+.renta-info {
+    flex: 1;
+}
+
+.renta-titulo {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--azul-link);
+    margin-bottom: 3px;
+}
+
+.renta-meta {
+    font-size: 11px;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.badge-en-casa {
+    display: inline-block;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 7px;
+    margin-top: 4px;
+}
+
+.badge-devuelta {
+    display: inline-block;
+    background: #e2e3e5;
+    color: #383d41;
+    border: 1px solid #d6d8db;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 7px;
+    margin-top: 4px;
+}
+
+/* contador resumen */
+.resumen-box {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.resumen-box strong {
+    color: var(--rojo);
 }
