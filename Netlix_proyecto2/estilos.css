@@ -593,10 +593,6 @@ body {
     border-color: #8b0000;
 }
 
-.login-input.err {
-    border-color: #c00;
-    background: #fff8f8;
-}
 
 .login-error-box {
     background: #ffe0e0;
@@ -769,17 +765,4 @@ body {
     font-weight: bold;
     padding: 2px 7px;
     margin-top: 4px;
-}
-
-/* contador resumen */
-.resumen-box {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px 14px;
-    font-size: 12px;
-    margin-bottom: 16px;
-}
-
-.resumen-box strong {
-    color: var(--rojo);
 }

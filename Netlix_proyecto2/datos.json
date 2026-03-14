@@ -38,7 +38,52 @@
         "descripcion": "Tres amigos despiertan en una suite de Las Vegas sin recordar nada de la noche anterior y deben reconstruir los hechos para encontrar al novio desaparecido antes de la boda.",
         "imagen": "https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg",
         "trailer": "https://www.youtube.com/watch?v=tlize92ffnY"
+    },
+    {
+
+        "id": 5,
+        "titulo": "Eterno resplandor de una mente sin recuerdos",
+        "anio": 2004,
+        "genero": "Drama",
+        "director": "Michel Gondry",
+        "descripcion": "una pareja que, tras una dolorosa ruptura, decide someterse a un procedimiento médico para borrar sus recuerdos compartidos.",
+        "imagen": "https://pics.filmaffinity.com/aOlvaidate_de_mai-314689716-large.jpg",
+        "trailer":"https://www.youtube.com/watch?v=07-QBnEkgXU"
+    },
+    {
+        "id": 6,
+        "titulo": "Memento",
+        "anio": 2000,
+        "genero": "Drama",
+        "director": "Christopher Nolan",
+        "descripcion": "es un thriller psicológico sobre Leonard, un hombre con amnesia anterógrada incapaz de crear nuevos recuerdos.",
+        "imagen": "https://pics.filmaffinity.com/Memento-230609861-mmed.jpg",
+        "trailer":"https://www.youtube.com/watch?v=gmxFlIePsAw"
+
+    },
+    {
+        "id": 7,
+        "titulo": "Torrente 2, Misión en Marbella",
+        "anio": 2001,
+        "genero": "Comedia",
+        "director": " Santiago Segura",
+        "descripcion": "Tras huir de Madrid, el impresentable detective José Luis Torrente se instala en Marbella, donde, tras perder su dinero, trabaja como detective privado y se enfrenta a un traficante de armas (Spinelli) para salvar la ciudad.",
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/abe80401353fab901f4d4bc5e5e9d4d0d6474a5bbea409d91e07e6f4a0ea3da5.jpg",
+        "trailer":"https://www.youtube.com/watch?v=w5DgB8eT84E"
+
+    },
+    {
+        "id": 8,
+        "titulo": "Shrek",
+        "anio": 2001,
+        "genero": "Comedia",
+        "director": "Andrew Adamson",
+        "descripcion": "Narra la historia de un ogro verde y solitario que, para recuperar la tranquilidad de su pantano invadido por criaturas fantásticas, acepta rescatar a la princesa Fiona para el villano Lord Farquaad, acompañado por un carismático burro.",
+        "imagen": "https://static.wikia.nocookie.net/shrek/images/7/7c/Shrek_Poster_02.jpg/revision/latest?cb=20190315035135&path-prefix=es",
+        "trailer":"https://www.youtube.com/watch?v=B88JfTyJ1Fw"
+
     }
+
 
 ]
 

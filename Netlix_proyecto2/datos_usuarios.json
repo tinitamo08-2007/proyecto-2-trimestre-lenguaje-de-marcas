@@ -53,5 +53,15 @@
         "fecha_renta": "15/01/2003",
         "fecha_devolucion": "22/01/2003",
         "estado": "devuelta"
+    },
+    {
+        "id_pelicula": 8,
+        "nombre": "Alejandro",
+        "correo": "alejandro@netflix.com", 
+        "contraseña": "alejandro123",
+        "fecha_renta": "10/01/2003",
+        "fecha_devolucion": "22/01/2003",
+        "estado": "en casa"
+
     }
 ]
